@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <header>
+        <div class="container">
+            <h1 class="logo">Isas Saba</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Sobre Mí -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Hi, my name is Isas Saba</h2>
+                    <p class="subtitle">Unity Developer | AR / VR Specialist</p>
+                    <p>I'm a passionate and enthusiastic Unity Developer with 7+ years of experience in games,
+                        augmented and virtual reality. I’m continuously learning and improving to bring high-quality,
+                        innovative solutions to clients.</p>
+                    <div class="buttons">
+                        <a href="#portfolio" class="btn primary-btn">My work</a>
+                        <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/300" alt="Foto de perfil">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Portfolio -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            
+            <!-- Tabs de navegación -->
+            <div class="tabs">
+                <button class="tab-btn active" data-target="companies">Companies</button>
+                <button class="tab-btn" data-target="vrar">VR & AR</button>
+                <button class="tab-btn" data-target="3dgames">3D & Games</button>
+            </div>
+            
+            <!-- Contenido de las tabs -->
+            <div class="tab-content">
+                <!-- Empresas -->
+                <div id="companies" class="tab-pane active">
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="Sprites/sandbox.jpg" alt="Proyecto 1">
+                            </div>
+                            <div class="project-details">
+                                <h3>Game Client and Game Maker</h3>
+                                <h4>The Sandbox | Platforms: PC | Unity</h4>
+                                <p>The Sandbox is a virtual gaming world where you can build, own, and monetize your gaming experiences.</p>
+                                <!-- <p><b>Me on the development:</b> Mostly working on improving or revamping the already working UI for the Game Client and the Game Maker. Also, as part of one of the first development teams, I worked on bugfixing and other aspects on the game over this 5 years, like gameplay, multiplayer, engine, etc.</p> -->
+                                <a href="http://sandbox.game" class="project-link" target="_blank">
+                                    <i class="fas fa-globe"></i> Web
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- VR & AR -->
+                <div id="vrar" class="tab-pane">
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="Sprites/solanas.jpg" alt="Proyecto VR 1">
+                            </div>
+                            <div class="project-details">
+                                <h3>Solanas Group - VR Platform</h3>
+                                <h4>Client: Grupo Solanas | Platforms: Oculus Go, GearVR | Unity</h4>
+                                <p>Three immersive VR experiences showcasing Solanas' resorts using 3D renders, 360° photography, and 360° video.</p>
+                                <a href="https://drive.google.com/file/d/1XpSbsKrEUjjPUMtRjs0ehYrlH4FiqVze/view" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Ver Video
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="Sprites/serenito.jpg" alt="Proyecto AR 1">
+                            </div>
+                            <div class="project-details">
+                                <h3>Serenito – Espota de Risa!</h3>
+                                <h4>Client: Danone / Room 23 | Platforms: Android, iOS | Unity, Vuforia</h4>
+                                <p>AR app to scan yogurt containers and unlock jokes and prizes. Bronze winner in +Digital 2016 Awards.</p>
+                                <a href="https://www.youtube.com/watch?v=NjExoyjnkhY&ab_channel=GetUpEstudioDigital" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Ver Video
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="Sprites/serepixeles.jpg" alt="Proyecto AR 1">
+                            </div>
+                            <div class="project-details">
+                                <h3>SERENITO - SEREPIXELS</h3>
+                                <h4>Client: Danone / Room 23 | Platforms: Android / iOS | Unity, Vuforia</h4>
+                                <p>Scan the packs, receive the filters and use them to “serepixelate” your own videos.</p>
+                                <a href="" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Ver Video
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="Sprites/pachorra.jpg" alt="Proyecto AR 1">
+                            </div>
+                            <div class="project-details">
+                                <h3>PACHORRA</h3>
+                                <h4>Client: Danone / Room 23 | Platforms: Android / iOS | Unity, Vuforia</h4>
+                                <p>A facial recognition app overlayed on face mask and 3D objects, it allows filming videos and posting them on the social networks.</p>
+                                <a href="" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Ver Video
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="Sprites/catslator.jpg" alt="Proyecto VR 2">
+                            </div>
+                            <div class="project-details">
+                                <h3>CATSLATOR</h3>
+                                <h4>Client: Fresh Step | Platforms: Android, iOS | Unity + OpenCV</h4>
+                                <p>AR app using cat face recognition to generate funny messages based on their expressions.</p>
+                                <a href="https://itunes.apple.com/us/app/catslator-by-fresh-step/id1253609204" class="project-link" target="_blank">
+                                    <i class="fas fa-gamepad"></i> App
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="Sprites/previngea.jpg" alt="Proyecto VR 2">
+                            </div>
+                            <div class="project-details">
+                                <h3>PREVINGEA VR</h3>
+                                <h4>Client: Previngea | Platforms: Oculus Go | Unity</h4>
+                                <p>Immersive VR simulation for training on proper fire extinguisher use in various emergency scenarios.</p>
+                                <a href="" class="project-link" target="_blank">
+                                    <i class="fas fa-gamepad"></i> App
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="Sprites/presonalview.jpg" alt="Proyecto VR 2">
+                            </div>
+                            <div class="project-details">
+                                <h3>Personal View</h3>
+                                <h4>Client: Telecom Personal | Platforms: Android / iOS / Unity / Vuforia | Unity</h4>
+                                <p>An app design for agents to show the complete collection of phones and their different models.</p>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="Sprites/amoramor.jpg" alt="Proyecto VR 2">
+                            </div>
+                            <div class="project-details">
+                                <h3>AMOR AMOR #AugmentedLove</h3>
+                                <h4>Client: Cacharel / Room 23 | Platforms: Android, iOS | Unity + 360°</h4>
+                                <p>VR campaign for perfume launch with 360° romantic stories experienced through Google Cardboard.</p>
+                                <a href="https://youtu.be/rQ5e0V0sW-M" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Video
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="Sprites/YSL.jpg" alt="Proyecto VR 2">
+                            </div>
+                            <div class="project-details">
+                                <h3>YSL Black Opium VR</h3>
+                                <h4>Client: YSL / L'Oréal | Platforms: Android | Unity + 360°</h4>
+                                <p>VR experience to discover perfume combinations in 360° fantasy environments using branded headset.</p>
+                                <a href="https://www.youtube.com/watch?v=TUFbQasGRAw&ab_channel=GetUpEstudioDigital" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Video
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="Sprites/natele.jpg" alt="Proyecto VR 2">
+                            </div>
+                            <div class="project-details">
+                                <h3>Natele VR</h3>
+                                <h4>Client: Bayer Guatemala | Platforms: Oculus Go | Unity</h4>
+                                <p>Interactive educational VR experience to guide mothers through prenatal nutritional recommendations.</p>
+                                <a href="https://www.youtube.com/watch?v=3B1PbjwhW7o&ab_channel=GetUpEstudioDigital" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Video
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="Sprites/estudiantes.jpg" alt="Proyecto VR 2">
+                            </div>
+                            <div class="project-details">
+                                <h3>ESTUDIANTES LP - BOOK 11O YEARS</h3>
+                                <h4>Client: Troupe Comunicación / Estudiantes de la plata | Platforms: Android / iOS | Unity / Vuforia</h4>
+                                <p>In commemoration of 110 years, the sporting club launched a book composed of their history and photographs. The app demonstrates unpublished videos of the foundation and 3D animations of the future stadium.</p>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="Sprites/dowcenter.jpg" alt="Proyecto VR 2">
+                            </div>
+                            <div class="project-details">
+                                <h3>DOW CENTER</h3>
+                                <h4>Client: Dow Chemicals / Estudiantes de la plata | Platforms: Android / iOS | Unity / Vuforia</h4>
+                                <p>Experience for Dow chemicals to show the new stadium "Dow Center". With the app, users can see the arena in detail using augmented reality.</p>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="Sprites/aleve.jpg" alt="Proyecto VR 2">
+                            </div>
+                            <div class="project-details">
+                                <h3>BAYER - ALEVE & CANESPOR</h3>
+                                <h4>Client: Aumenta / Bayer | Platforms: iOS | Unity / ARKit</h4>
+                                <p>These two experiences were created to promote the products in an innovative way using ARKit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 3D & Juegos -->
+                <div id="3dgames" class="tab-pane">
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="Sprites/honda.jpg" alt="Proyecto 3D 1">
+                            </div>
+                            <div class="project-details">
+                                <h3>Honda CR-V Configurator</h3>
+                                <h4>Client: Honda Motors Argentina | Platforms: Web | Three.js</h4>
+                                <p>Interactive web configurator for customizing car accessories in full 3D.</p>
+                                <a href="http://getupstudio.co/Honda/crv.html" class="project-link" target="_blank">
+                                    <i class="fas fa-gamepad"></i> Ver Video
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="Sprites/pcq.jpg" alt="Proyecto 3D 2">
+                            </div>
+                            <div class="project-details">
+                                <h3>Player Career Quiz</h3>
+                                <h4>Personal Project | Platforms: Android | Unity</h4>
+                                <p>Guess the football player based on their club career. 500k+ downloads.</p>
+                                <a href="" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Ver Video
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="Sprites/exterran.jpg" alt="Proyecto Juego 1">
+                            </div>
+                            <div class="project-details">
+                                <h3>Exterran 3D</h3>
+                                <h4>Client: Exterran | Platforms: Web | Unity WebGL</h4>
+                                <p>Web tool showcasing gas compression equipment and pipeline animations with interactive 3D models.</p>
+                                <a href="" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Ver Video
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="Sprites/clight.jpg" alt="Proyecto Juego 1">
+                            </div>
+                            <div class="project-details">
+                                <h3>Clight Puzzle Game</h3>
+                                <h4>Client: Mondelēz | Platforms: Web | Unity WebGL</h4>
+                                <p>Match-based puzzle game where users collect lemon drops to complete levels with themed branding.</p>
+                                <a href="" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Ver Video
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="Sprites/ayudinRuleta.jpg" alt="Proyecto Juego 1">
+                            </div>
+                            <div class="project-details">
+                                <h3>Ayudín Roulette Game</h3>
+                                <h4>Client: Ayudín / Room 23 | Platforms: Web | Unity</h4>
+                                <p>Interactive roulette game with prize mechanics and animations, playable from mobile and desktop browsers.</p>
+                                <a href="" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Ver Video
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <p class="contact-text">If you're interested in working together or just want to say hello, feel free to reach out!</p>
+            
+            <div class="social-links">
+                <a href="https://github.com/isassaba" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/isas-saba-94595b172/" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://wa.me/5492236141423" target="_blank" class="social-link">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="mailto:isassaba@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Isas Saba</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
